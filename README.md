@@ -1,2 +1,2 @@
-# eCommerceApp
-Bir e-satış sitesi projesi yapmak istiyorum.
+# BookStore
+Bir book store projesini web üzerinde asp.net ile geliştimek istiyorum.
