@@ -1,0 +1,15 @@
+.btn-sign:focus .icon-default{
+
+    display: none;
+
+}
+.btn-sign:focus .icon-active{
+
+    display: block;
+
+}
+
+
+
+
+
