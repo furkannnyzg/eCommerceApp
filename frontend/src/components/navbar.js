@@ -6,7 +6,9 @@ export default function Navbar() {
 
     return(
       
-    <nav className='nav box-border bg-[#FF8000] flex justify-between  items-center gap-8 p-0 px-4 h-16'>
+    <nav className='nav  bg-[#FF8000]'>
+      <div className=" box-border flex justify-between  items-center gap-8 p-0 px-4 h-16">
+      
       <div className="ml-36">
         <a href="/">
         <img src={Logo} alt="Logo" className=""  />
@@ -57,6 +59,55 @@ export default function Navbar() {
         </li>
 
       </ul>
+</div>
+
+<nav class="bg-[#F5F5F5] mt-2 h-8 p-4 flex items-center space-x-5 justify-start pl-60 "  >
+    <div class=" ">
+      <span className="kitap font-medium text-gray-500   ">
+        <button type="button" className=" ">
+          Kitap
+        </button>
+      </span>
+    </div>
+    <div class=" ">
+      <span className="kitap font-medium text-gray-500   ">
+        <button className="hover:text-black ">
+          Dergi
+        </button>
+      </span>
+    </div>
+    <div class=" ">
+      <span className="kitap font-medium text-gray-500   ">
+        <button className="hover:text-black ">
+          Hobi&Oyuncak
+        </button>
+      </span>
+    </div>
+    <div class=" ">
+      <span className="kitap font-medium text-gray-500   ">
+        <button className="hover:text-black ">
+          Kırtasiye
+        </button>
+      </span>
+    </div>
+    <div class=" ">
+      <span className="kitap font-medium text-gray-500   ">
+        <button className="hover:text-black ">
+          Kırkambar
+        </button>
+      </span>
+    </div>
+    <div class=" ">
+      <span className="kitap font-medium text-gray-500   ">
+        <button className="hover:text-black ">
+          Tüm Kategoriler
+        </button>
+      </span>
+    </div>
+
+  </nav>
+      
     </nav>
+     
     )
 }

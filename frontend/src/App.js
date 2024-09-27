@@ -5,8 +5,6 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import Navbar from './components/navbar';
 import Add from "./components/add";
-import Pricing from './pages/pricing';
-import About from './pages/about';
 import Home from './pages/home';
 import {Route,Router,Routes} from "react-router-dom"
 
@@ -25,8 +23,6 @@ function App() {
     <div className='container'>
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/about" element={<About/>}/>
-      <Route path="/pricing" element={<Pricing/>}/>
     </Routes>
     </div>
 
