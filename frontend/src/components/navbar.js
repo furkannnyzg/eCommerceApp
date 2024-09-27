@@ -5,9 +5,12 @@ export default function Navbar() {
   
 
     return(
+      
     <nav className='nav box-border bg-[#FF8000] flex justify-between  items-center gap-8 p-0 px-4 h-16'>
       <div className="ml-36">
+        <a href="/">
         <img src={Logo} alt="Logo" className=""  />
+        </a>
       </div>
       
        {/* ul unorder list sıralanmamış liste yapısı*/}

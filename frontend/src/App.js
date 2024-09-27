@@ -4,6 +4,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import Navbar from './components/navbar';
+import Add from "./components/add";
 import Pricing from './pages/pricing';
 import About from './pages/about';
 import Home from './pages/home';
@@ -15,7 +16,11 @@ function App() {
 
   return (
     <>
+    
+    <Add />
     <Navbar />
+
+
     {/*{component}     Burada yapmaya çalıştığım bir js kısmı direk verip hangisi çağrılıyorsa onun gelmesi*/ }
     <div className='container'>
     <Routes>
