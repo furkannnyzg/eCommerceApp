@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav className='nav  bg-[#FF8000]'>
       <div className=" box-border flex justify-between  items-center gap-8 p-0 px-4 h-16">
       
-      <div className="ml-36">
+      <div className="mt-2 ml-36">
         <a href="/">
         <img src={Logo} alt="Logo" className=""  />
         </a>
@@ -61,13 +61,14 @@ export default function Navbar() {
       </ul>
 </div>
 
-<nav class="bg-[#F5F5F5] mt-2 h-8 p-4 flex items-center space-x-5 justify-start pl-60 "  >
+<nav class="bg-[#F5F5F5] mt-2 h-8 p-4 flex items-center space-x-5 justify-start  "  >
+  
 <Menu>
                           {/*BURADAKİ MENU BUTTON AÇILDIKTAN SONRA BİR YERE BASMA SIKINTISINA BİR DAHA DÖNÜLECEK*/ }
       <MenuButton className="font-medium text-gray-500 hover:text-black">Kitap</MenuButton>
-      <MenuItems anchor="bottom">
-      <nav class="mt-2  flex items-center space-x-5 justify-start ml-40 "  >
-        <MenuItem>
+      <MenuItems anchor="bottom" className="absolute flex  mt-2 items-center  " >
+      <nav class=" flex space-x-5  "  >
+        <MenuItem  >
           <a className="block data-[focus]:bg-blue-100" href="/settings">
             Settings
           </a>
@@ -88,7 +89,8 @@ export default function Navbar() {
 </Menu>
 <Menu>
       <MenuButton className="font-medium text-gray-500 hover:text-black">Dergi</MenuButton>
-      <MenuItems anchor="bottom" className="mt-2 flex items-center space-x-5 justify-start ml-6 ">
+      <MenuItems anchor="bottom" className="flex mt-2 items-center">
+      <nav class=" flex space-x-5   ">
         <MenuItem>
           <a className="block data-[focus]:bg-blue-100" href="/settings">
             Settings
@@ -104,118 +106,11 @@ export default function Navbar() {
             License
           </a>
         </MenuItem>
+        </nav>
       </MenuItems>
       
 </Menu>
-<Menu>
-      <MenuButton className="font-medium text-gray-500 hover:text-black" >Hobi&Oyuncak</MenuButton>
-      <MenuItems anchor="bottom" className="mt-2 flex items-center space-x-5 justify-start ">
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/settings">
-            Settings
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/support">
-            Support
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/license">
-            License
-          </a>
-        </MenuItem>
-      </MenuItems>
       
-</Menu>
-<Menu>
-      <MenuButton className="font-medium text-gray-500 hover:text-black">Kırtasiye</MenuButton>
-      <MenuItems anchor="bottom">
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/settings">
-            Settings
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/support">
-            Support
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/license">
-            License
-          </a>
-        </MenuItem>
-      </MenuItems>
-      
-</Menu><Menu>
-      <MenuButton className="font-medium text-gray-500 hover:text-black">Kırtasiye</MenuButton>
-      <MenuItems anchor="bottom">
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/settings">
-            Settings
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/support">
-            Support
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/license">
-            License
-          </a>
-        </MenuItem>
-      </MenuItems>
-      
-</Menu>
-<Menu>
-      <MenuButton className="font-medium text-gray-500 hover:text-black">Kırkambar</MenuButton>
-      <MenuItems anchor="bottom">
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/settings">
-            Settings
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/support">
-            Support
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/license">
-            License
-          </a>
-        </MenuItem>
-      </MenuItems>
-      
-</Menu>
-<Menu>
-      <MenuButton className="font-medium text-gray-500 hover:text-black">Tüm Kategoriler</MenuButton>
-      <MenuItems anchor="bottom">
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/settings">
-            Settings
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/support">
-            Support
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/license">
-            License
-          </a>
-        </MenuItem>
-      </MenuItems>
-      
-</Menu>
-    
-   
-      
-    
-
   </nav>
       
     </nav>
