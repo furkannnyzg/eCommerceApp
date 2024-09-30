@@ -1,15 +1,27 @@
 import { useState } from "react"
 import Logo from "../img/logo2.png"
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
 export default function Navbar() {
   
+  
+    const [activeMenu, setActiveMenu] = useState(null);
+  
+    const handleMouseEnter = (menu) => {
+      setActiveMenu(menu);
+    };
+  
+    const handleMouseLeave = () => {
+      setActiveMenu(null);
+    };
+
 
     return(
       
     <nav className='nav  bg-[#FF8000]'>
       <div className=" box-border flex justify-between  items-center gap-8 p-0 px-4 h-16">
       
-      <div className="mt-2 ml-36">
+      <div className=" ml-36">
         <a href="/">
         <img src={Logo} alt="Logo" className=""  />
         </a>
@@ -18,7 +30,10 @@ export default function Navbar() {
        {/* ul unorder list sıralanmamış liste yapısı*/}
       <ul className="p-0 m-0 list-none inline flex gap-3 mr-36">
 
-        <li>
+        <li 
+        onMouseEnter={() => handleMouseEnter("kitap")}
+        onMouseLeave={handleMouseLeave}
+        >
           {/*Zaten benim yapmak istediğim focusmuş o yüzden gerek kalmadı(geneldede focus galiba)  BU DEĞİŞCEK NOT*/}
           <button className="rounded-full px-3 py-2 text-sm font-medium text-white hover:bg-[#CC6600]  hover:text-white flex items-center btn-sign " href="" id="user-menu-button " >
 
@@ -38,6 +53,18 @@ export default function Navbar() {
           <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
           </svg>
           </button>
+
+          {activeMenu === "kitap" && (
+              <div className="absolute bg-orange-500 text-white p-4  space-y-2 z-10 shadow-lg rounded-md"
+              onMouseEnter={() => handleMouseEnter("kitap")}
+              onMouseLeave={handleMouseLeave}
+              >
+                <a href="#" className="block">Çok Satan Kitaplar</a>
+                <a href="#" className="block">Yeni Çıkan Kitaplar</a>
+                <a href="#" className="block">Yayıncılar</a>
+                <a href="#" className="block">Yazarlar</a>
+              </div>
+            )}
         </li>
 
         <li>
@@ -61,57 +88,7 @@ export default function Navbar() {
       </ul>
 </div>
 
-<nav class="bg-[#F5F5F5] mt-2 h-8 p-4 flex items-center space-x-5 justify-start  "  >
-  
-<Menu>
-                          {/*BURADAKİ MENU BUTTON AÇILDIKTAN SONRA BİR YERE BASMA SIKINTISINA BİR DAHA DÖNÜLECEK*/ }
-      <MenuButton className="font-medium text-gray-500 hover:text-black">Kitap</MenuButton>
-      <MenuItems anchor="bottom" className="absolute flex  mt-2 items-center  " >
-      <nav class=" flex space-x-5  "  >
-        <MenuItem  >
-          <a className="block data-[focus]:bg-blue-100" href="/settings">
-            Settings
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/support">
-            Support
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/license">
-            License
-          </a>
-        </MenuItem>
-      </nav>
-      </MenuItems>
-      
-</Menu>
-<Menu>
-      <MenuButton className="font-medium text-gray-500 hover:text-black">Dergi</MenuButton>
-      <MenuItems anchor="bottom" className="flex mt-2 items-center">
-      <nav class=" flex space-x-5   ">
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/settings">
-            Settings
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/support">
-            Support
-          </a>
-        </MenuItem>
-        <MenuItem>
-          <a className="block data-[focus]:bg-blue-100" href="/license">
-            License
-          </a>
-        </MenuItem>
-        </nav>
-      </MenuItems>
-      
-</Menu>
-      
-  </nav>
+
       
     </nav>
      
