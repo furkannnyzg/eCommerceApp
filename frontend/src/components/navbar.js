@@ -1,6 +1,7 @@
 import { useState,useRef,useEffect} from "react"
 import Logo from "../img/logo2.png"
 
+
 export default function Navbar() {
   
   
@@ -58,11 +59,10 @@ export default function Navbar() {
 
       <div className="relative block">
         <span className="absolute right-0 flex items-center pt-1.5 pr-1">
-        <a href="">
-        
-        </a>
+       
+
         </span>
-        <input className="block w-96 h-9 border-solid border-2 hover:border-[#994C00] border-[#FF8000] duration-300 rounded-full pl-3 placeholder:font-medium focus:outline-none" type="text" placeholder="Kitap adı,yazar veya yayınevi ara"/>
+        <input className="block w-96 h-9 border-solid border-2 hover:border-[#994C00] border-[#FF8000] duration-300 rounded-full pl-3 placeholder:font-medium focus:outline-none " type="text" placeholder="Kitap adı,yazar veya yayınevi ara"/>
         
       </div>
 
