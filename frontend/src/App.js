@@ -3,6 +3,7 @@ import './App.css';
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import SearchIcon from '@mui/icons-material/Search';
 import Navbar from './components/navbar';
 import Add from "./components/add";
 import Home from './pages/home';

@@ -56,8 +56,14 @@ export default function Navbar() {
       </div>
 
 
-      <div>
-        <input type="text"/>
+      <div className="relative block">
+        <span className="absolute right-0 flex items-center pt-1.5 pr-1">
+        <a href="">
+        
+        </a>
+        </span>
+        <input className="block w-96 h-9 border-solid border-2 hover:border-[#994C00] border-[#FF8000] duration-300 rounded-full pl-3 placeholder:font-medium focus:outline-none" type="text" placeholder="Kitap adı,yazar veya yayınevi ara"/>
+        
       </div>
 
 
@@ -71,7 +77,7 @@ export default function Navbar() {
         onClick={toggleLoginMenu}
         ref={loginbuttonRef}
         >
-          {/*Zaten benim yapmak istediğim focusmuş o yüzden gerek kalmadı(geneldede focus galiba)  BU DEĞİŞCEK NOT*/}
+          
           <button className="rounded-full px-3 py-2 text-sm font-medium text-white hover:bg-[#CC6600]  active:shadow-md duration-300 hover:text-white flex items-center btn-sign " href="" id="user-menu-button " 
           > 
           <svg 
@@ -121,7 +127,7 @@ export default function Navbar() {
         ref={basketbuttonRef}
         
         >
-          {/*Zaten benim yapmak istediğim focusmuş o yüzden gerek kalmadı(geneldede focus galiba)  BU DEĞİŞCEK NOT*/}
+          
           <button className="rounded-full px-3 py-2 text-sm font-medium text-white hover:bg-[#CC6600]  active:shadow-md duration-300 hover:text-white flex items-center btn-sign " href="" id="user-menu-button " 
           > 
           
