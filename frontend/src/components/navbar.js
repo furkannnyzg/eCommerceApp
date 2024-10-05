@@ -50,7 +50,7 @@ export default function Navbar() {
     return(
       
     <nav className='nav  bg-[#FF8000]'>
-      <div className=" box-border flex justify-between items-center gap-8 p-0 px-4 h-16">
+      <div className=" box-border flex justify-between items-center gap-8  px-4 h-16">
       
       <div className=" ml-36">
         <a href="/">
