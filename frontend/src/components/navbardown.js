@@ -27,10 +27,40 @@ export default function NavbarDownBar() {
                             </button>
 
                             {isOpenDownBar ==='Kitap' &&
-                            (<div className=" absolute mt-2 left-[224px]">
-                                <div className="font-medium text-white hover:underline text-sm">Çok satan kitaplar
+                            (<div className=" absolute mt-2 left-[220px] ">
 
-                                </div>
+                                <ul className="flex space-x-2">
+                                    <li>
+                                    <div className=" flex items-center font-medium text-white hover:underline text-sm hover:cursor-pointer hover:bg-[#CC6600] p-1 pb-2 pt-0 rounded-t-md duration-700">
+                                    <span>Çok Satan Kitaplar</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg"fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  className="size-5 ml-1 pt-1     text-white  " id="down-icon"  ><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div className=" flex items-center font-medium text-white hover:underline text-sm hover:cursor-pointer hover:bg-[#CC6600] p-1 pb-2 pt-0 rounded-t-md duration-700">
+                                    <span>Yeni Çıkan Kitaplar</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg"fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  className="size-5 ml-1 pt-1     text-white  " id="down-icon"  ><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div className=" flex items-center font-medium text-white hover:underline text-sm hover:cursor-pointer hover:bg-[#CC6600] p-1.5 pt-0 rounded-md ">
+                                    <span>Yayıncılar</span>
+                                    
+                                    </div>
+                                    </li>
+                                    <li>
+                                    <div className=" flex items-center font-medium text-white hover:underline text-sm hover:cursor-pointer hover:bg-[#CC6600] p-1.5  pt-0 rounded-md ">
+                                    <span>Yazarlar</span>
+                                    
+                                    </div>
+                                    </li>
+                                    
+
+                                    {/*TIKLANDIĞINDA KAPANMA Sorununu ÇÖZ*/ }
+                                
+                                </ul>
+
+                                
                             </div>)
                             }
 
