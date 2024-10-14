@@ -84,7 +84,7 @@ export default function Navbar() {
         ref={loginbuttonRef}
         >
           
-          <button className="rounded-full px-3 py-2 text-sm font-medium text-white hover:bg-[#CC6600]  active:shadow-md duration-300 hover:text-white flex items-center btn-sign " href="" id="user-menu-button " 
+          <button className="rounded-full px-3 py-2 text-sm font-medium text-white hover:bg-[#CC6600]  active:shadow-md duration-300 hover:text-white flex items-center btn-sign shadow-md ring-2 ring-white " href="" id="user-menu-button " 
           > 
           <svg 
           xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 mr-2 " >
@@ -134,7 +134,7 @@ export default function Navbar() {
         
         >
           
-          <button className="rounded-full px-3 py-2 text-sm font-medium text-white hover:bg-[#CC6600]  active:shadow-md duration-300 hover:text-white flex items-center btn-sign " href="" id="user-menu-button " 
+          <button className="rounded-full px-3 py-2 text-sm font-medium text-white hover:bg-[#CC6600]  active:shadow-md duration-300 hover:text-white flex items-center btn-sign shadow-md ring-2 ring-white " href="" id="user-menu-button " 
           > 
           
           <span className="icon-basket mr-2"></span>
