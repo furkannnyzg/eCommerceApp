@@ -4,7 +4,10 @@ export default function Home()
 
     return
     (
-        <div></div>
+        <Home>
+            <div>HELLO</div>
+
+        </Home>
 
     )
 

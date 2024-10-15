@@ -19,7 +19,7 @@ export default function NavbarDownBar() {
 
     return(
 
-        <nav className="nav  bg-[#FFFFFF] ">
+        <nav className="nav  bg-[#F5F5F5] ">
             <div className="box-border flex items-center h-8">
                 <div  className=" flex ml-56  ">
                     <ul className="flex space-x-5 ">
@@ -310,7 +310,7 @@ export default function NavbarDownBar() {
                     </ul>
                 </div>
             </div>
-            <nav className="nav  bg-[#FF8000]">
+            <nav className="nav  bg-[#FF8000] shadow-md border-b-2 border-[#CC6600]">
             <div className="box-border flex items-center h-8">
 
             </div>

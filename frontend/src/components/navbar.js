@@ -1,6 +1,7 @@
 import { useState,useRef,useEffect} from "react"
 import Logo from "../img/logo2.png"
 import NavbarDownBar from "./navbardown";
+import Home from "../pages/home";
 
 
 
@@ -183,6 +184,9 @@ export default function Navbar() {
 </div>
 
       <NavbarDownBar/>
+
+      
+      
       
     </nav>
 

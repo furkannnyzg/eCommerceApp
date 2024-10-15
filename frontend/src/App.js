@@ -19,6 +19,7 @@ function App() {
     {/*{component}     Burada yapmaya çalıştığım bir js kısmı direk verip hangisi çağrılıyorsa onun gelmesi*/ }
     <div className='container'>
     <Routes>
+      
       <Route path="/" element={<Home/>}/>
     </Routes>
     </div>
