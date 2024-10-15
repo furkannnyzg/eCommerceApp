@@ -110,7 +110,7 @@ export default function Navbar() {
           </button>
           {isLoginOpen && (
             
-              <div className="absolute   mt-5 w-36  rounded-md bg-[#FF8000]  shadow-lg font-medium  text-white "
+              <div className="absolute   mt-5 w-36  rounded-md bg-[#FF8000]  shadow-lg font-medium  text-white z-10 "
               ref={loginmenuRef}
               >
                 <ul>
@@ -159,7 +159,7 @@ export default function Navbar() {
 
 
             
-              <div className="absolute   mt-5 w-36  rounded-md bg-[#FF8000]  shadow-lg font-medium  text-white "
+              <div className="absolute   mt-5 w-36  rounded-md bg-[#FF8000]  shadow-lg font-medium  text-white z-10 "
               ref={basketmenuRef}
               > {/*BURADAKİ SEPET BOX İÇERİĞİ TASARLANACAK 1.10.2024*/}
                 <div>

@@ -3,12 +3,15 @@ import { useState,useRef,useEffect} from "react"
 
 
 export default function NavbarDownBar() {
-
-    const[isOpenDownBar,setDownBar] = useState(null);  
+    //burda başta açık olması gereken şeyi useState içerisinde belirtiyoruz ve sayfa açıldığında açık başlıyor.
+    const[isOpenDownBar,setDownBar] = useState('Kitap');  
     
     const toggleDropdown = (menu) => {
         // Aynı menüye tekrar tıklanırsa kapat, farklı menüye tıklanırsa o menüyü aç
-        setDownBar(isOpenDownBar === menu ? null : menu);
+        //isOpenDownBar === menu ? null : menu önceki kod buydu 
+        //bu içeriğide sekmedekinede basınca kapanıyodu şuan hiç bir şekilde birine basıldığında kapanmamakta 
+        
+        setDownBar(menu);
       };
 
 
@@ -26,7 +29,7 @@ export default function NavbarDownBar() {
                                 <div >Kitap</div>
                             </button>
 
-                            {isOpenDownBar ==='Kitap' &&
+                            {isOpenDownBar ==='Kitap'  &&
                             (<div className=" absolute mt-2 left-[220px] w-[1100px] ">
 
                                 <ul className="flex space-x-2">
