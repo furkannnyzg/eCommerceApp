@@ -6,20 +6,33 @@ import Home from './pages/home';
 import NotFoundPage from './pages/NotFoundPage';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter,RouterProvider} from "react-router-dom"
+import LoginPage from './pages/login';
 import "./styles/navbar.css"
+import Register from './pages/register';
 
 
 const router=createBrowserRouter([
   {
     path:'/',
     element:<App/>,
-    errorElement:<NotFoundPage/>
+    errorElement:<NotFoundPage/>,
+    children: [
+      {
+        path:"/home",
+        element:<Home/>
+      },
+      {
 
+        path: "/login",
+        element: <LoginPage/>,
+      },
+      {
+        path:"/register",
+        element:<Register/>
+      }
+    ],
   },
-  {
-    path:'/home',
-    element: <Home/>
-  }
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

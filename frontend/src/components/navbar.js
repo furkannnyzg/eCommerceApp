@@ -2,6 +2,7 @@ import { useState,useRef,useEffect} from "react"
 import Logo from "../img/logo2.png"
 import NavbarDownBar from "./navbardown";
 import Home from "../pages/home";
+import { Link } from "react-router-dom";
 
 
 
@@ -52,11 +53,11 @@ export default function Navbar() {
       
     <nav className='nav  bg-[#FF8000]'>
       <div className=" box-border flex justify-between items-center gap-8  px-4 h-16">
-      
+      {/*Logo*/}
       <div className=" ml-36">
-        <a href="/">
+        <Link to="/home">
         <img src={Logo} alt="Logo" className=""  />
-        </a>
+        </Link>
       </div>
 
 
@@ -84,14 +85,14 @@ export default function Navbar() {
         onClick={toggleLoginMenu}
         ref={loginbuttonRef}
         >
-          
+            {/*Login button*/ }
           <button className="rounded-full px-3 py-2 text-sm font-medium text-white hover:bg-[#CC6600]  active:shadow-md duration-300 hover:text-white flex items-center btn-sign shadow-md ring-2 ring-white " href="" id="user-menu-button " 
           > 
           <svg 
           xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 mr-2 " >
           <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
           </svg>
-
+        
           <span className="icon-text">Giriş Yap</span>
 
 
@@ -116,10 +117,10 @@ export default function Navbar() {
               >
                 <ul>
                   
-                  <a href="/" className="block px-4 py-2  rounded-t-md hover:bg-[#CC6600] duration-300">Giriş Yap</a>
+                <Link to="/login" className="block px-4 py-2  rounded-t-md hover:bg-[#CC6600] duration-300">Giriş Yap</Link>
                   
                   
-                  <a href="/" className="block px-4 py-2  rounded-b-md hover:bg-[#CC6600] duration-300">Kayıt Ol</a>
+                  <Link to="/register" className="block px-4 py-2  rounded-b-md hover:bg-[#CC6600] duration-300">Kayıt Ol</Link>
                  
                 </ul>
               </div>
@@ -134,7 +135,7 @@ export default function Navbar() {
         ref={basketbuttonRef}
         
         >
-          
+            {/*Basket button*/ }
           <button className="rounded-full px-3 py-2 text-sm font-medium text-white hover:bg-[#CC6600]  active:shadow-md duration-300 hover:text-white flex items-center btn-sign shadow-md ring-2 ring-white " href="" id="user-menu-button " 
           > 
           
