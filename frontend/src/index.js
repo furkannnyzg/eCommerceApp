@@ -16,11 +16,18 @@ const router=createBrowserRouter([
     path:'/',
     element:<App/>,
     errorElement:<NotFoundPage/>,
+    
+    
     children: [
+      {
+        index:true,
+        element:<Home/>
+      },
       {
         path:"/home",
         element:<Home/>
       },
+      
       {
 
         path: "/login",
@@ -32,6 +39,10 @@ const router=createBrowserRouter([
       }
     ],
   },
+  {
+    path:'/home',
+    element:<Home/>,
+  }
   
 ]);
 

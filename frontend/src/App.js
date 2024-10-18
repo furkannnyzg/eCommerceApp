@@ -20,6 +20,7 @@ function App() {
 
     {/*{component}     Burada yapmaya çalıştığım bir js kısmı direk verip hangisi çağrılıyorsa onun gelmesi*/ }
     <div className='container'>
+    
     <Outlet/>
     </div>
 
