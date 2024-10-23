@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar';
 import Add from "./components/add";
+import Footer_1 from './components/footer';
 import Home from './pages/home';
 import LoginPage from './pages/login';
 import {Route,Router,Routes} from "react-router-dom"
@@ -23,6 +24,7 @@ function App() {
     
     <Outlet/>
     </div>
+    <Footer_1/>
 
 
     </>

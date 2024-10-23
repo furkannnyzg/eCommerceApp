@@ -78,7 +78,7 @@ export default function NavbarDownBar() {
                                     </li>
                                     
 
-                                    {/*TIKLANDIĞINDA KAPANMA Sorununu ÇÖZ*/ }
+                                    
                                 
                                 </ul>
 
@@ -143,7 +143,7 @@ export default function NavbarDownBar() {
                                     </li>
                                     
 
-                                    {/*TIKLANDIĞINDA KAPANMA Sorununu ÇÖZ*/ }
+                                    
                                 
                                 </ul>
 
@@ -189,7 +189,7 @@ export default function NavbarDownBar() {
                                     </li>
                                     
 
-                                    {/*TIKLANDIĞINDA KAPANMA Sorununu ÇÖZ*/ }
+                                
                                 
                                 </ul>
 
@@ -241,7 +241,7 @@ export default function NavbarDownBar() {
                                     </li>
                                     
 
-                                    {/*TIKLANDIĞINDA KAPANMA Sorununu ÇÖZ*/ }
+                                
                                 
                                 </ul>
 
@@ -288,7 +288,7 @@ export default function NavbarDownBar() {
                                     </li>
                                     
 
-                                    {/*TIKLANDIĞINDA KAPANMA Sorununu ÇÖZ*/ }
+                                
                                 
                                 </ul>
 
