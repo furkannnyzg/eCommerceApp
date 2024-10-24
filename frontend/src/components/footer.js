@@ -73,7 +73,7 @@ export default function Footer_1() {
         </div>
        </div>
         {/*Footer altı Sekme butonları*/ }
-       <div className="bg-black h-[175px]"></div>
+       <div className="bg-black h-[300px]"></div>
        </div>
        
     )
