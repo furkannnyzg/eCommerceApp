@@ -7,7 +7,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter,RouterProvider} from "react-router-dom"
 import LoginPage from './pages/login';
-import "./styles/navbar.css"
+
 import Register from './pages/register';
 
 

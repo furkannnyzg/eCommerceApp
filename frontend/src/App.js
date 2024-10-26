@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar';
+import Newnavbar from './components/newnavbar';
 import Add from "./components/add";
 import Footer_1 from './components/footer';
 import Home from './pages/home';
@@ -16,7 +17,9 @@ function App() {
     <>
     
     <Add />
+    <div className="w-full max-w-full min-h-screen overflow-x-hidden">
     <Navbar />
+    
 
 
     {/*{component}     Burada yapmaya çalıştığım bir js kısmı direk verip hangisi çağrılıyorsa onun gelmesi*/ }
@@ -24,8 +27,9 @@ function App() {
     
     <Outlet/>
     </div>
-    <Footer_1/>
+    
 
+    </div>
 
     </>
     

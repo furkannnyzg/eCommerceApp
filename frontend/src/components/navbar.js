@@ -51,17 +51,19 @@ export default function Navbar() {
     
     return(
       
-    <nav className='nav  bg-[#FF8000]'>
-      <div className=" box-border flex justify-between items-center gap-8  px-4 h-16">
-      {/*Logo*/}
+    <div className=" w-full">
+      <div className="bg-[#FF8000] h-16 ">
+      <div className="items-center grid grid-cols-3 grid-rows-1 gap-2 ">
+
+      {/*Logo div-1 */ }
       <div className=" ml-36">
         <Link to="/home">
         <img src={Logo} alt="Logo" className=""  />
         </Link>
       </div>
 
-
-      <div className="relative block">
+      {/*div-2*/}
+      <div className="">
         <span className="absolute right-0 flex items-center pt-1.5 pr-3">
           <a href="/">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-6 text-[#FF8000] hover:text-[#CC6600] ">
@@ -75,8 +77,8 @@ export default function Navbar() {
       </div>
 
 
-
-      
+      {/*div-3*/}
+      <div>
        {/* ul unorder list sıralanmamış liste yapısı*/}
       <ul className="p-0 m-0 list-none inline flex gap-3 mr-36">
 
@@ -110,6 +112,7 @@ export default function Navbar() {
           </svg>
           )}
           </button>
+          
           {isLoginOpen && (
             
               <div className="absolute   mt-5 w-36  rounded-md bg-[#FF8000]  shadow-lg font-medium  text-white z-10 "
@@ -178,18 +181,19 @@ export default function Navbar() {
             )}
         </li>
       </ul>
+      </div>
 
 
 
 
 </div>
+</div>
+      {/*<NavbarDownBar/>*/}
 
-      <NavbarDownBar/>
-
       
       
       
-    </nav>
+    </div>
 
     
      
