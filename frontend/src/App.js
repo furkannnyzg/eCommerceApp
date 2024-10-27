@@ -17,8 +17,8 @@ function App() {
     <>
     
     <Add />
-    <div className="w-full max-w-full min-h-screen overflow-x-hidden">
-    <Navbar />
+    <div className="w-full h-full    ">
+    <Newnavbar />
     
 
 
@@ -28,8 +28,8 @@ function App() {
     <Outlet/>
     </div>
     
-
     </div>
+    
 
     </>
     

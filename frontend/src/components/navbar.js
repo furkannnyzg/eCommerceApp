@@ -50,14 +50,14 @@ export default function Navbar() {
     }, []);
     
     return(
+    <nav className="w-full h-full absolute bg-[#FF8000] ">
+    <div className="max-w-7xl mx-auto  sm:px-6  ">
+      <div className=" flex items-center justify-between h-16 ">
       
-    <div className=" w-full">
-      <div className="bg-[#FF8000] h-16 ">
-      <div className="items-center grid grid-cols-3 grid-rows-1 gap-2 ">
 
       {/*Logo div-1 */ }
-      <div className=" ml-36">
-        <Link to="/home">
+      <div className="flex items-center">
+        <Link to="/home" className="flex-shrink-0">
         <img src={Logo} alt="Logo" className=""  />
         </Link>
       </div>
@@ -193,7 +193,9 @@ export default function Navbar() {
       
       
       
-    </div>
+  
+
+    </nav>
 
     
      
