@@ -1,51 +1,88 @@
 import { Link } from "react-router-dom";
-import Logo from "../img/wh_d8e078ec3.png";
+import Logo from "../img/logo2.png"
+import { useState } from "react";
+
 
 
 
 export default function Newnavbar() {
-  
 
-  return (
-    
-   <header className="flex justify-between items-center text-black py-2 py-8 md:px-56 bg-[#FF8000] drop-shadow-md h-16">
+  const [isMobileMenuOpen,setMobilMenu]=useState(false);
+  
+  return (  
+    <div className="w-full w-full absolute">
+   <header className="flex justify-between items-center text-black py-6 px-8 md:px-24 bg-[#FF8000] drop-shadow-md h-20">
 
     {/*Logo*/}
-    <Link to="/home" className="">
-        <img src={Logo} alt="" className="w-56 h-auto"  />
+    <div className="flex ">
+    <Link to="/home" className="flex-shrink-0" >
+        <img src={Logo} alt="" className=" w-56"  />
     </Link>
+    </div>
 
     {/*INPUT*/}
-    <div className="relative hidden md:flex items-center justify-center gap-3">
+    <div className=" hidden md:flex flex-grow items-center justify-center px-8 lg:px-4 xl:px-8 ">
 
-    <a href="/" className="absolute right-3">
+      {/*Buradaki ikinci div şöyle bir element düşün grouplama gibi 3d designda guruplamanın dışında kalan aynı boyutta büyümüyo ya onun gibi bir şey grouplama yaptığında içindeki şeylerde onunla beraber gidip gelmekte*/}
+    <div className="relative w-full max-w-lg">
+    <a href="/" className="absolute right-3 top-1 ">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-6 text-[#FF8000] hover:text-[#CC6600] ">
             <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
             </svg>
     </a>
 
-    <input className="block w-96 h-9 border-solid border-2 hover:border-[#994C00] border-[#FF8000] duration-300 rounded-full pl-3 placeholder:font-medium focus:outline-none " type="text" placeholder="Kitap adı,yazar veya yayınevi ara"/>
-
+    <input className="block w-full h-9 border-solid border-2 hover:border-[#994C00] border-[#FF8000] duration-300 rounded-full pl-3 placeholder:font-medium focus:outline-none " type="text" placeholder="Kitap adı,yazar veya yayınevi ara"/>
+    </div>
     </div>
 
 
 
     {/*LOGIN BASKET*/}
-    <ul className=" hidden xl:flex items-center  gap-12 font-medium text-base ">
+    <ul className=" hidden xl:flex items-center  gap-6 ">
 
-      <li>selam</li>
+    <li>
+            {/*Login button*/ }
+          <button className="rounded-full px-3 py-2 text-sm font-medium text-white hover:bg-[#CC6600]  active:shadow-md duration-300 hover:text-white flex items-center btn-sign shadow-md ring-2 ring-white " href="" id="user-menu-button " 
+          > 
+          <svg 
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 mr-2 " >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+          </svg>
+        
+          <span className="icon-text">Giriş Yap</span>
 
-      <li>selam</li>
 
-      <li>selam</li>
 
-      <li>selam</li>
+          
+          </button>
+      </li>
+
+    <li>
+            {/*Basket button*/ }
+          <button className="rounded-full px-3 py-2 text-sm font-medium text-white hover:bg-[#CC6600]  active:shadow-md duration-300 hover:text-white flex items-center btn-sign shadow-md ring-2 ring-white " href="" id="user-menu-button " 
+          > 
+          
+          <span className="icon-basket mr-2 pt-1 size-6"></span>
+
+          <span className="icon-text">Sepetim</span>
+
+
+
+          
+          </button>
+      </li>
+
+     
 
     </ul>
+
+    <div>
+      <span className="icon-menu text-white size-3 xl:hidden  cursor-pointer xl:px font-medium"></span>
+    </div>
     
 
    </header>
-
+   </div>
 
 
 

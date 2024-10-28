@@ -17,7 +17,7 @@ function App() {
     <>
     
     <Add />
-    <div className="w-full h-full    ">
+  
     <Newnavbar />
     
 
@@ -28,7 +28,7 @@ function App() {
     <Outlet/>
     </div>
     
-    </div>
+    
     
 
     </>
