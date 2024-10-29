@@ -8,10 +8,14 @@ import { useState } from "react";
 export default function Newnavbar() {
 
   const [isMobileMenuOpen,setMobilMenu]=useState(false);
+
+  const toggleNavbar=()=>(
+    setMobilMenu(!isMobileMenuOpen)
+  );
   
   return (  
     <div className="w-full w-full absolute">
-   <header className="flex justify-between items-center text-black py-6 px-8 md:px-24 bg-[#FF8000] drop-shadow-md h-20">
+   <header className="flex justify-between flex-wrap top-0 items-center text-black  px-8 py-2 md:px-24 bg-[#FF8000] drop-shadow-md">
 
     {/*Logo*/}
     <div className="flex ">
@@ -76,9 +80,33 @@ export default function Newnavbar() {
 
     </ul>
 
-    <div>
-      <span className="icon-menu text-white size-3 xl:hidden  cursor-pointer xl:px font-medium"></span>
+    <div className="">
+      <span onClick={toggleNavbar}
+      className="icon-menu text-white size-3 xl:hidden  cursor-pointer xl:px font-medium p-2 hover:shadow-lg hover:bg-[#CC6600] duration-100 rounded-md"></span>
+
+      
+
     </div>
+
+    {isMobileMenuOpen && (
+
+    <div className=" xl:hidden flex flex-col basis-full pt-3  items-center">
+      <ul>
+        <li className=" text-white hover:text-gray-500 cursor-pointer">
+          Giriş Yap
+        </li>
+        <li className=" text-white pt-3 hover:text-gray-500 cursor-pointer">
+          Kayıt Ol
+        </li>
+        <li className=" text-white pt-3 pb-3 hover:text-gray-500 cursor-pointer">
+          Sepetim
+        </li>
+      </ul>
+    </div>
+    )}
+
+
+
     
 
    </header>
